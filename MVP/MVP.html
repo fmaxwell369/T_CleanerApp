@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Maxwell</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <a href="#home" class="logo">
+            Fonou <span>Maxwell</span>
+        </a>
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home">Acceuil</a>
+            <a href="#about">Propos</a>
+            <a href="#services">Services</a>
+            <a href="#projets">Projets</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <button class="gradient-btn">Contactez Moi</button>
+    </header>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Bonjour, je suis <span>Maxwell</span></h1>
+            <h3>
+                Développeur & Designer UI/UX
+            </h3>
+            <p>“Je maîtrise les fondamentaux du web et du design UI/UX je sais construire des projets clairs, fonctionnels et bien structurés.” </p>
+                <div class="social-icons">
+                    <a href="#">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="#">
+                        <i class='bx bxl-linkedin'></i>
+                </div>
+                <div class="btn-group">
+                    <a href="#" class="btn">Hire</a>
+                    <a href="#" class="btn">Download CV</a>
+                    <a href="#contact" class="btn">Contact</a>
+                </div>
+        </div>
+        <div class="home-img">
+            <img src="IMG_6887.jpeg" alt="">
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="IMG_6887.jpeg" alt="">
+        </div>
+        <div class="about-content">
+            <h2>A Propos de <span>Moi</span></h2>
+            <p>Je me forme au développement et le design UI/UX.
+Mon objectif est d’intégrer une entreprise afin de consolider mes bases techniques et évoluer vers des projets plus complexes.
+Je privilégie des projets pratiques pour comprendre la logique du développement et les bonnes pratiques.
+            </p>
+            <a href="#" class="btn">lire plus</a>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <h2 class="heading"><span>Services</span></h2>
+        <div class="services-container">
+            <div class="service-box">
+                <div class="service-info">
+                    <i class="bx bxl-figma"></i>
+                    <h3>Design UI/UX</h3>
+                    <p>Création de maquettes et prototypes pour des applications web et mobiles, en mettant l'accent sur l'expérience utilisateur et l'interface utilisateur.</p>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="service-info">
+                    <i class="bx bx-code-curly"></i>
+                    <h4>Developpeur backend</h4>
+                    <p>Développement de la logique côté serveur, gestion des bases de données et intégration des API pour assurer le bon fonctionnement des applications web.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="projets" id="projets">
+        <h2 class="heading">Mes <span>Projets</span></h2>
+        <div class="projets-box">
+            <div class="projet-card">
+                <img src="projet2.png" alt="">
+                <h3><span>Site E-commerce</span></h3>
+                <p>Développement d’un site e-commerce en HTML, CSS et JavaScript, intégrant une interface responsive, une navigation fluide et des fonctionnalités interactives comme la gestion du panier et l’affichage dynamique des produits.</p>
+            </div>
+        </div>
+        <div class="projets-box">
+            <div class="projet-card">
+                <img src="projet1.png" alt="">
+                <h3><span>Maquettes App</span></h3>
+                <p>Dans le cadre de ce projet académique, j’ai conçu la maquette d’une application de consultation médicale assistée par ordinateur visant à proposer une première assistance aux patients à partir des informations symptomatiques saisies.
+La démarche adoptée repose sur les principes du design centré utilisateur, incluant l’analyse fonctionnelle, la conception des parcours utilisateurs et la structuration de l’interface à l’aide de l’outil Figma.</p>
+            </div>
+        </div>
+
+    </section>
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Moi</span></h2>
+        <form action="#">
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text">
+                    Nom Complet
+                    <input type="email">
+                    Email
+                </div>
+                <div class="input-box">
+                    <input type="numero">
+                    Numéro de Téléphone
+                    <input type="text">
+                    Sujet
+                </div>
+            </div>
+            <div class="input-group2">
+                <textarea name="" id="" placeholder="Ton message" cols="30" rows="10"></textarea>
+                <input type="Soumettre" value="Envoyer" class="btn">
+            </div>
+        </form>
+    </section>
+    <footer class="footer">
+                <div class="social-icons">
+                    <a href="#">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="#">
+                        <i class='bx bxl-linkedin'></i>
+                </div>
+                <ul class="list">
+                    <li>
+                        <a href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a href="#about">A propos</a>
+                    </li>
+                    <li>
+                        <a href="#projets">Projets</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <p class="copyright">
+                    &copy; 2024 Fonou Maxwell. Tous droits réservés.
+                </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
