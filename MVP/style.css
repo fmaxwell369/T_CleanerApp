@@ -378,7 +378,7 @@ section {
     position: absolute;
     top: 100%;
     right: 0;
-    width: 50%;
+    width: 100%;
     padding: 1rem 3rem;
     background-color: (0, 0, 0, 0.8);
     border-bottom-left-radius: 2rem;
