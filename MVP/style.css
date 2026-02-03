@@ -7,9 +7,9 @@
     font-family: "poppins";
 }
 :root {
-    --bg-color: #080808;
+    --bg-color: #F5F2ED;
     --second-bg-color: #101010;
-    --text-color: white;
+    --text-color: rgb(196, 195, 195);
     --main-color: #ea580c;
 }
 html {
@@ -17,7 +17,7 @@ html {
     overflow-x: hidden;
 }
 body {
-    background-color: var(--bg-color);
+    background-color: rgba(245, 242, 237,1);
     color: var(--text-color);
 }
 header {
@@ -26,18 +26,20 @@ header {
     left: 0;
     width: 100%;
     padding: 4rem 15%;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(245, 242, 237,1);
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--bg-color);
+    background-color: transparent;
     z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 #menu-icon {
     font-size: 3.5rem;
     color: var(--main-color);
     display: none;
+    cursor: pointer;
 }
 .logo {
     font-size: 5rem;
@@ -57,6 +59,10 @@ span{
     );
     background-clip: text;
     color: transparent;
+}
+.navbar{
+    backdrop-filter: blur(10px);
+
 }
 .navbar a {
     font-size: 1.8rem;
@@ -97,6 +103,7 @@ section {
     justify-content: center;
     align-items: center;
     gap: 15rem;
+    margin: auto;
 }
 .home-content {
     display: flex;
@@ -188,7 +195,7 @@ section {
     justify-content:center;
     align-items: center;
     gap: 10rem;
-    background-color: var(--second-bg-color);
+    background-color: var(--bg-color);
 }
 .about-img img {
     width: 25vw;
@@ -274,7 +281,7 @@ section {
     font-size: 8rem;
 }
 .projets {
-    background-color: var(--second-bg-color);
+    background-color: var(--bg-color);
 }
 .projets-box {
     display: grid;
@@ -343,7 +350,7 @@ section {
     resize: none;
 }
 .footer {
-    background-color: var(--second-bg-color);
+    background-color: var(--bg-color);
     padding: 5opx 0;
 }
 .footer .social-icons{
@@ -358,7 +365,7 @@ section {
     margin-left: 20px;
 }
 .footer ul li a {
-    color: white;
+    color: rgb(196, 195, 195);
     border-bottom: 3px solid transparent;
     transition: 0.3s ease-in-out;
 }
@@ -370,6 +377,9 @@ section {
     margin-top: 40px;
     font-size: 16px;
 }
+.input-group2 .btn{
+    cursor: pointer;
+}
 @media(max-width:1285px){
     #menu-icon {
         display: block;
@@ -380,7 +390,8 @@ section {
     right: 0;
     width: 100%;
     padding: 1rem 3rem;
-    background-color: (0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
     border-bottom-left-radius: 2rem;
     border-left: 2px solid var(--main-color);
     border-bottom: 2px solid var(--main-color);
@@ -392,7 +403,7 @@ section {
     font-size: 2rem;
     color: var(--text-color);
     }
-.navar.active {
+.navbar.active {
     display: block;
     }
 .gradient-btn {
